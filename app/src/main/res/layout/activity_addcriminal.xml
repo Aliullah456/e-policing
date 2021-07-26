@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".addcriminalActivity">
+    <Toolbar
+        android:id="@+id/addcriminaltoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"></Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_account"
+                android:id="@+id/criminalpicture"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addecriminaltextviewporgress"
+                android:layout_below="@+id/addevidencecid"
+                android:text="0.0 %"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"/>
+            <ProgressBar
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/addcriminalprogressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_below="@id/addevidencetextviewporgress"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:id="@+id/addcriminalname"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_input"
+                android:hint="Enter criminal name"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/addcriminalCNIC"
+                android:hint="Enter criminal CNIC"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/addcriminalphone"
+                android:hint="Enter criminal phone number"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"                android:id="@+id/addcriminaladdress"
+                android:hint="enter criminal address "
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="350dp"
+                android:background="@drawable/custom_input"
+                android:layout_height="40dp"
+                android:id="@+id/addcriminalage"
+                android:hint="Enter criminal age"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_input"                android:id="@+id/addcriminalcomplaint"
+                android:hint="Enter complaint id "
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="save"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addcriminalsavebtn"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_rounded_blue"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</LinearLayout>

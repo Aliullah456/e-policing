@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".adminprofieFragment">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adminprofilepic"
+            android:layout_width="127dp"
+            android:layout_height="129dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/ic_account"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <TextView
+            android:id="@+id/adminemailtextshow"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:textAlignment="center"
+            android:text="email"
+            />
+
+        <Button
+            android:id="@+id/changeadminprofilebtn"
+            android:text="change profile picture"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_rounded_blue"
+            android:padding="10dp"
+            android:textStyle="bold"
+
+            android:layout_width="350dp"
+            android:textColor="#ffff"/>
+
+        <Button
+            android:id="@+id/adminchangepassbtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="382dp"
+            android:layout_height="29dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:background="#FAFAFA"
+            android:shadowDx="@dimen/material_emphasis_disabled"
+            android:shadowColor="#000000"
+            android:textSize="15dp"
+            android:text="Change Password?"
+            android:textColor="@android:color/holo_green_dark"
+             />
+
+                <EditText
+                    android:id="@+id/admincpasss"
+                    android:layout_width="350dp"
+                    android:drawableStart="@drawable/custom_lock_icon"
+                    android:drawablePadding="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_input"
+                    android:layout_marginTop="24dp"
+                    android:hint="type your new password"
+                    android:inputType="text"
+                    android:text=""
+                     />
+                <EditText
+                    android:id="@+id/admincpasssagain"
+                    android:layout_width="350dp"
+                    android:drawableStart="@drawable/custom_lock_icon"
+                    android:drawablePadding="12dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="50dp"
+                    android:hint="type your new password again"
+                    android:inputType="text"
+                    android:text=""
+                    />
+
+        <Button
+            android:id="@+id/admincpasschangebtn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_rounded_green"
+            android:text="Change"
+             />
+
+        <Button
+            android:id="@+id/admincdeletebtn"
+            android:layout_width="350dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded_red"
+            android:text="Delete Account"
+            android:textColor="@android:color/white"
+             />
+
+
+</LinearLayout>

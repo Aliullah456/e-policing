@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/adminpicshow"
+        android:layout_width="94dp"
+        android:layout_height="79dp"
+        android:src="@drawable/islamabad" />
+
+    <TextView
+        android:id="@+id/adminname"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="welcome to epolicing sytem"
+        android:textSize="18sp"/>
+
+</LinearLayout>

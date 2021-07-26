@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"-->
+<group android:checkableBehavior="single">
+    <item android:id="@+id/nav_profile"
+        android:title="Profile"/>
+    <item android:id="@+id/nav_plate_number"
+        android:title="Scan plate number"/>
+    <item android:id="@+id/nav_complaint"
+        android:title="Complaint Management"/>
+    <item android:id="@+id/nav_criminal"
+        android:title="Criminal Management"/>
+    <item android:id="@+id/nav_victim"
+        android:title="Car Registration Management"/>
+    <item android:id="@+id/nav_evidence"
+        android:title="Evidence Management"/>
+    <item android:id="@+id/nav_witness"
+        android:title="Witness Management"/>
+
+</group>
+    <item android:title="account section">
+        <menu>
+            <item
+                android:id="@+id/nav_changeemail"
+                android:title="change email"/>
+            <item
+                android:id="@+id/nav_signout"
+                android:title="Signout"/>
+        </menu>
+    </item>
+
+</menu>

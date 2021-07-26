@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".complainFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Complaint Registration"
+                android:textAlignment="center"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"
+                />
+            <Spinner
+                android:id="@+id/catogoryspinner"
+                android:layout_width="350dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                ></Spinner>
+
+
+            <EditText
+                android:id="@+id/crimedetail"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:textAlignment="center"
+                android:inputType="textLongMessage"
+                android:background="@drawable/custom_input"
+                android:layout_marginTop="5dp"
+                android:hint="short detail please "/>
+            <Spinner
+                android:id="@+id/regionspinner"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                ></Spinner>
+            <Spinner
+                android:id="@+id/distinctspinner"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                ></Spinner>
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:background="@drawable/custom_input"
+                android:layout_gravity="center_horizontal"
+                android:hint="where crime happened"/>
+            <EditText
+                android:id="@+id/date_input"
+                android:hint="which date it happened"
+                android:clickable="true"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:editable="false"
+                android:textAlignment="center"
+                android:focusable="false"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_input"/>
+            <EditText
+                android:id="@+id/time_input"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_input"
+                android:layout_width="350dp"
+                android:textAlignment="center"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="which time exactly it happened "/>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/filebtn"
+                    android:layout_width="124dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_rounded_blue"
+                    android:layout_marginRight="40dp"
+                    android:textColor="#fff"
+                    android:text="file" />
+
+                <Button
+                    android:id="@+id/uploadbtn"
+                    android:layout_width="124dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/button_rounded_green"
+                    android:textColor="#fff"
+                    android:text="upload" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/clickbtn"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_rounded_blue"
+                android:text="Submit"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="30dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

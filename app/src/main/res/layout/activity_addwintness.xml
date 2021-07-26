@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".addwintness">
+    <Toolbar
+        android:id="@+id/witnesstoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"></Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="350dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_account"
+                android:id="@+id/witnesspicture"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/addwitnesstextviewporgress"
+                android:text="0.0 %"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"/>
+            <ProgressBar
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/addwitnessprogressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                />
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/addwitnessname"
+                android:hint="Enter witness name"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/addwitnessCNIC"
+                android:hint="Enter witness CNIC"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/addwitnessphone"
+                android:hint="Enter witness phone number"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/addwitnessaddress"
+                android:hint="enter witness address "
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/addwitnessage"
+                android:hint="Enter witness age"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/addwitnesscomplaint"
+                android:hint="Enter complaint id "
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="save"
+
+                android:id="@+id/addwitnesssavebtn"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_rounded_blue"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+    <Toolbar
+        android:id="@+id/signuptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"></Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="151dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/islamabad"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="235dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:text="Signup Page"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Enter your full name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Enter your email address"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtcnic"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Enter your CNIC"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtphone"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Enter your phone number"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtaddress"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Enter your Address"
+        android:inputType="textPersonName"
+        android:text=""
+      android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:text=""
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Signup"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/quantum_white_100"
+        android:background="@drawable/button_rounded_blue"
+       android:layout_gravity="center_horizontal" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</LinearLayout>

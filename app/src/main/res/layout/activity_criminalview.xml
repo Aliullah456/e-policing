@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".criminalviewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        >
+
+            <ImageView
+                android:id="@+id/updatecriminalpicture"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="255dp"
+                android:src="@drawable/ic_account" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatecriminaltextviewporgress"
+                android:layout_below="@+id/addevidencecid"
+                android:text="0.0 %"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"/>
+            <ProgressBar
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatecriminalprogressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_below="@id/addevidencetextviewporgress"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatecriminalname"
+                android:hint="criminal name"
+                android:textAlignment="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatecriminalCNIC"
+                android:hint="criminal CNIC"
+                android:textAlignment="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatecriminalphone"
+                android:hint="criminal phone number"
+                android:textAlignment="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatecriminaladdress"
+                android:hint="criminal address "
+                android:textAlignment="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatecriminalage"
+                android:hint="criminal age"
+                android:textAlignment="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatecriminalcomplaint"
+                android:hint="complaint id "
+                android:textAlignment="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/updatecriminalsavebtn"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_rounded_green"
+                android:text="Update"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+</LinearLayout>

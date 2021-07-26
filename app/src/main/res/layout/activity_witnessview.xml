@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".witnessviewActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/updatewitnesspicture"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="255dp"
+                android:src="@drawable/ic_account"  />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatewitnesstextviewporgress"
+                android:text="0.0 %"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"/>
+            <ProgressBar
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatewitnessprogressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatewitnessname"
+                android:hint="witness name"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatewitnessCNIC"
+                android:hint="witness CNIC"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatewitnessphone"
+                android:hint="witness phone number"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatewitnessaddress"
+                android:hint="witness address "
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatewitnessage"
+                android:hint="witness age"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/updatewitnesscomplaint"
+                android:hint="complaint id "
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/updatewitnesssavebtn"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_rounded_green"
+                android:text="Update"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+</LinearLayout>

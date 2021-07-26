@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- xmlns:tools="http://schemas.android.com/tools"
+     tools:showIn="navigation_view"-->
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/admin_nav_profile"
+            android:title="Profile"/>
+        <item android:id="@+id/nav_police"
+            android:title="Police Management"/>
+        <item android:id="@+id/nav_complainer"
+            android:title="Civilian Management"/>
+
+            <item
+                android:id="@+id/admin_nav_changeemail"
+                android:title="change email"/>
+            <item
+                android:id="@+id/admin_nav_signout"
+                android:title="Signout"/>
+    </group>
+
+
+</menu>
